@@ -1,5 +1,5 @@
 # Wordle
-Progetto realizzato a scuola individualmente. Visto la popolarità del gioco Worlde ho deciso di provare a realizzarlo utilizzando java, con lo conoscienze di allora.
+Progetto realizzato a scuola individualmente. Visto la popolarità del gioco Worlde ho deciso di provare a realizzarlo utilizzando Java, con lo conoscienze di allora.
 
 
 ## Funzionamento
@@ -9,4 +9,4 @@ Per utilizzarlo bastera, oltre cambiare la classe :), inserire una parola compos
 * **giallo** - la lettera è nella parola ma non si trova in quella posizione;
 * **verde** - la lettera è nella parola e nel giusto posto.
 
-![image](https://github.com/dupine/Wordle/assets/84334652/f43d887d-253b-41e6-9e3b-400075d6424b)
+![N|Solid](https://github.com/dupine/Wordle/assets/84334652/f43d887d-253b-41e6-9e3b-400075d6424b)
