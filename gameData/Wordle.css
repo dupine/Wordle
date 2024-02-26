@@ -1,0 +1,79 @@
+.text-field{
+	-fx-font-size: 270%;
+	-fx-background-color: #212529;
+	-fx-text-fill: #e9ecef;
+	-fx-alignment: center;
+	-fx-font-weight: 700;
+}
+
+.label{
+	-fx-text-fill: #e9ecef;
+}
+
+#suggerimento{
+	-fx-text-fill: #51565e;
+}
+
+.button{
+	-fx-background-color: #343a40;
+}
+
+#griglia{
+	-fx-background-color: #343a40;
+}
+
+#buttonInfoImg{
+	-fx-background-image: url("../img/buttonInfoImg.png");
+	-fx-background-repeat: no-repeat no-repeat;
+}
+
+#buttonSettingsImg{
+	-fx-background-image: url("../img/buttonSettingsImg.png");
+	-fx-background-repeat: no-repeat no-repeat;
+}
+
+#buttonSettingsImg:hover{
+	-fx-background-image: url("../img/buttonSettingsImgRotated.png");
+	-fx-background-repeat: no-repeat no-repeat;
+}
+
+#buttonResaImg{
+	-fx-background-image: url("../img/buttonResaImg.png");
+	-fx-background-repeat: no-repeat no-repeat;
+}
+
+#buttonResaImg:hover{
+	-fx-background-image: url("../img/buttonResaImgHover.png");
+	-fx-background-repeat: no-repeat no-repeat;
+}
+
+
+#buttonResetImg{
+	-fx-background-image: url("../img/buttonResetImg.png");
+	-fx-background-repeat: no-repeat no-repeat;
+}
+
+#buttonResetImg:hover{
+	-fx-background-image: url("../img/buttonResetImgHover.png");
+	-fx-background-repeat: no-repeat no-repeat;
+}
+
+#bgColor{
+	-fx-background-color: #343a40;
+}
+
+#green{
+  -fx-background-color: #336600;
+}
+
+#black{
+  -fx-background-color: BLACK;
+}
+
+#yellow{
+  -fx-background-color: #cccc00;
+}
+
+#darkBlue{
+	-fx-text-fill: #212529;
+}

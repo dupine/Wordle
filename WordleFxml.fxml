@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane id="bgColor" fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" stylesheets="@gameData/Wordle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.edu.iisgubbio.terzo.wordle.WordleIta">
+   <center>
+      <VBox id="bgColor" fx:id="vBox" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="hBox0" prefHeight="75.0" prefWidth="200.0">
+               <children>
+                  <TextField id="tf00" fx:id="tf00" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></TextField>
+                  <TextField id="tf10" fx:id="tf10" disable="true" layoutX="10.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></TextField>
+                  <TextField id="tf20" fx:id="tf20" disable="true" layoutX="96.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></TextField>
+                  <TextField id="tf30" fx:id="tf30" disable="true" layoutX="96.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></TextField>
+                  <TextField id="tf40" fx:id="tf40" disable="true" layoutX="263.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#parolaCompleta" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="hBox1" layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="200.0">
+               <children>
+                  <TextField id="tf01" fx:id="tf01" disable="true" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField id="tf11" fx:id="tf11" disable="true" layoutX="10.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField id="tf21" fx:id="tf21" disable="true" layoutX="96.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField id="tf31" fx:id="tf31" disable="true" layoutX="96.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField id="tf41" fx:id="tf41" disable="true" layoutX="263.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#parolaCompleta" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="hBox2" layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="tf02" disable="true" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf12" disable="true" layoutX="10.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf22" disable="true" layoutX="96.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf32" disable="true" layoutX="96.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf42" disable="true" layoutX="263.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#parolaCompleta" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="hBox3" layoutX="10.0" layoutY="90.0" prefHeight="75.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="tf03" disable="true" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf13" disable="true" layoutX="10.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf23" disable="true" layoutX="96.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf33" disable="true" layoutX="96.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf43" disable="true" layoutX="263.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#parolaCompleta" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="hBox4" layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="tf04" disable="true" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf14" disable="true" layoutX="10.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf24" disable="true" layoutX="96.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf34" disable="true" layoutX="96.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf44" disable="true" layoutX="263.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#parolaCompleta" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="hBox5" layoutX="10.0" layoutY="90.0" prefHeight="75.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="tf05" disable="true" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf15" disable="true" layoutX="10.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf25" disable="true" layoutX="96.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf35" disable="true" layoutX="96.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#cancel" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="tf45" disable="true" layoutX="263.0" layoutY="10.0" maxHeight="69.0" maxWidth="74.0" minHeight="69.0" minWidth="74.0" onKeyPressed="#parolaCompleta" onKeyTyped="#inserimentoCaratteri" prefHeight="69.0" prefWidth="74.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <GridPane BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="33.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="377.0" minWidth="10.0" prefWidth="77.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="377.0" minWidth="10.0" prefWidth="230.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="59.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+         <children>
+            <Label contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="215.0" text="   WORDLE" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowSpan="3">
+               <font>
+                  <Font size="33.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Button id="buttonSettingsImg" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#impostazioni" prefHeight="25.0" prefWidth="25.0" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Button id="buttonResaImg" focusTraversable="false" mnemonicParsing="false" onAction="#resa" prefHeight="25.0" prefWidth="25.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Text fill="#336600" strokeType="OUTSIDE" strokeWidth="0.0" text="V" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <Text fill="#9a1a1a" strokeType="OUTSIDE" strokeWidth="0.0" text="S" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <Label id="darkBlue" fx:id="lNumeroVittorie" text="0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="33.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="4.0" />
+               </GridPane.margin>
+            </Label>
+            <Label id="darkBlue" fx:id="lNumeroSconfitte" text="0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="33.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="4.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+   </top>
+</BorderPane>
